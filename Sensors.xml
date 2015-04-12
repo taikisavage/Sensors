@@ -10,7 +10,7 @@
       <block type="oled_cleardisplay" id="3">
         <next>
           <block type="multimedia_playwav" id="78">
-            <field name="WAV">Virtual Riot - Energy Drink.wav</field>
+            <field name="WAV">Energy_D.w</field>
           </block>
         </next>
       </block>
