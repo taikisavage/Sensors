@@ -9,22 +9,22 @@
     <statement name="DO">
       <block type="oled_cleardisplay" id="3">
         <next>
-          <block type="multimedia_playwav" id="7">
-            <field name="WAV">_SndTest.w</field>
+          <block type="multimedia_playwav" id="78">
+            <field name="WAV">_start.w</field>
           </block>
         </next>
       </block>
     </statement>
     <next>
-      <block type="controls_whileUntil" id="4" inline="false">
+      <block type="controls_whileUntil" id="5" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="sensor_button" id="5">
+          <block type="sensor_button" id="6">
             <field name="OBJECT">ENTER</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="oled_cleardisplay" id="6">
+          <block type="oled_cleardisplay" id="7">
             <next>
               <block type="oled_setcursor" id="8" inline="true">
                 <value name="STARTX">
@@ -167,7 +167,7 @@
                                                                             </value>
                                                                             <next>
                                                                               <block type="controls_if" id="45" inline="false">
-                                                                                <mutation elseif="1" else="1"></mutation>
+                                                                                <mutation elseif="2" else="1"></mutation>
                                                                                 <value name="IF0">
                                                                                   <block type="logic_compare" id="46" inline="true">
                                                                                     <field name="OP">LT</field>
@@ -222,6 +222,26 @@
                                                                                     <next>
                                                                                       <block type="movement_left" id="57"></block>
                                                                                     </next>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <value name="IF2">
+                                                                                  <block type="logic_compare" id="85" inline="true">
+                                                                                    <field name="OP">LT</field>
+                                                                                    <value name="A">
+                                                                                      <block type="sensor_object" id="86">
+                                                                                        <field name="OBJECT">REAR</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="math_number" id="87">
+                                                                                        <field name="NUM">80</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <statement name="DO2">
+                                                                                  <block type="multimedia_playwav" id="4">
+                                                                                    <field name="WAV">_SndTest.w</field>
                                                                                   </block>
                                                                                 </statement>
                                                                                 <statement name="ELSE">
