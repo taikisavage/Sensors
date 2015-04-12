@@ -33,7 +33,7 @@
                 </value>
                 <next>
                   <block type="oled_drawtext" id="512">
-                    <field name="TEXT">0     0</field>
+                    <field name="TEXT">&gt;     &lt;</field>
                     <next>
                       <block type="oled_setcursor" id="513" inline="true">
                         <value name="STARTX">
@@ -48,12 +48,12 @@
                         </value>
                         <next>
                           <block type="oled_drawtext" id="516">
-                            <field name="TEXT">\_______/</field>
+                            <field name="TEXT">\______/</field>
                             <next>
                               <block type="oled_setcursor" id="517" inline="true">
                                 <value name="STARTX">
                                   <block type="math_number" id="518">
-                                    <field name="NUM">50</field>
+                                    <field name="NUM">55</field>
                                   </block>
                                 </value>
                                 <value name="STARTY">
