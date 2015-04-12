@@ -7,13 +7,7 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="3">
-        <next>
-          <block type="multimedia_playwav" id="78">
-            <field name="WAV">Energy_D.w</field>
-          </block>
-        </next>
-      </block>
+      <block type="oled_cleardisplay" id="3"></block>
     </statement>
     <next>
       <block type="controls_whileUntil" id="5" inline="false">
