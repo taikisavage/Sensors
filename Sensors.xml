@@ -46,6 +46,29 @@
                             <field name="OBJECT">RIGHTFRONT</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="oled_setcursor" id="200" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="201">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="202">
+                                <field name="NUM">110</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawnumber" id="211" inline="true">
+                                <value name="NUMBER">
+                                  <block type="sensor_object" id="212">
+                                    <field name="OBJECT">REAR</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
