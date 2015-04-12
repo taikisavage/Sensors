@@ -266,6 +266,9 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="movement_stop" id="634"></block>
+        </next>
       </block>
     </next>
   </block>
