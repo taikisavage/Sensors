@@ -10,7 +10,7 @@
       <block type="oled_cleardisplay" id="3">
         <next>
           <block type="multimedia_playwav" id="4">
-            <field name="WAV">Energy_D.wav</field>
+            <field name="WAV">_SndTest.w</field>
           </block>
         </next>
       </block>
